@@ -1,73 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Trovel — Privacy Policy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #1F1B16; background: #F4EFE6; line-height: 1.75; }
-    h1 { font-size: 24px; border-bottom: 2px solid #B23A2E; padding-bottom: 8px; }
-    h2 { font-size: 17px; margin-top: 28px; color: #B23A2E; }
-    p, li { font-size: 15px; }
-    .meta { color: #6E6358; font-size: 13px; margin-bottom: 28px; }
-    a { color: #B23A2E; }
-    table { border-collapse: collapse; margin-top: 8px; width: 100%; font-size: 14px; }
-    th, td { border: 1px solid #C9C0B4; padding: 8px 12px; text-align: left; }
-    th { background: #F0E7D7; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trovel - Privacy Policy</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #1F1B16;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #F4EFE6;
+        }
+        .container {
+            background: #FBFAF6;
+            padding: 40px;
+            border-radius: 6px;
+            box-shadow: 0 2px 14px rgba(31, 27, 22, 0.08);
+        }
+        h1 {
+            color: #B23A2E;
+            text-align: center;
+            border-bottom: 3px solid #B23A2E;
+            padding-bottom: 15px;
+            margin-bottom: 24px;
+            font-size: 1.55rem;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #B23A2E;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            border-left: 4px solid #B23A2E;
+            padding-left: 14px;
+            font-size: 1.12rem;
+        }
+        h3 { color: #8B6F47; margin-top: 22px; font-size: 1rem; }
+        p, li { font-size: 0.97rem; }
+        .effective-date {
+            text-align: center;
+            color: #8B6F47;
+            font-style: italic;
+            margin-bottom: 28px;
+            font-size: 0.92rem;
+        }
+        .highlight {
+            background: #FAEBE8;
+            padding: 16px 18px;
+            border-left: 4px solid #B23A2E;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        .contact-info {
+            background: #F4EFE6;
+            padding: 20px;
+            border-radius: 6px;
+            margin-top: 28px;
+        }
+        ul, ol { padding-left: 24px; }
+        li { margin-bottom: 6px; }
+        table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.92rem; }
+        th, td { padding: 10px 12px; text-align: left; border: 1px solid #E8DCC2; vertical-align: top; }
+        th { background: #F4EFE6; color: #1F1B16; font-weight: 600; }
+        a { color: #B23A2E; }
+        strong { color: #1F1B16; }
+    </style>
 </head>
 <body>
-  <h1>Trovel Privacy Policy</h1>
-  <p class="meta">Last updated: 2026-05-20 · Effective: 2026-05-20</p>
+    <div class="container">
+        <h1>Trovel Privacy Policy</h1>
+        <p class="effective-date">Last updated: 2026-05-30 · Effective: 2026-05-30</p>
 
-  <p>Hasegi Inc. ("we") values your privacy and complies with the Personal Information Protection Act of the Republic of Korea and relevant laws. This policy applies to the mobile application "Trovel" (Korean title: 방구석 세계여행, the "Service").</p>
+        <div class="highlight">
+            <p>Hasegi Inc. ("we") values your privacy and complies with the Personal Information Protection Act of the Republic of Korea and relevant laws. This policy applies to the mobile application "Trovel" (Korean title: 방구석 세계여행, the "Service"). The Service requires no sign-up or login, and we store no personally identifiable information on our servers.</p>
+        </div>
 
-  <h2>1. Information We Collect</h2>
-  <p>The Service does not require sign-up, so we <strong>do not collect personally identifiable information such as name, email, or phone number</strong>. The following data is processed automatically:</p>
-  <table>
-    <tr><th>Type</th><th>Details</th><th>Storage</th></tr>
-    <tr><td>Visit records</td><td>IDs of landmarks marked as visited, stamp dates, streak counts</td><td>Local device (SharedPreferences)</td></tr>
-    <tr><td>Notification settings</td><td>Whether the daily reminder is enabled and at what time</td><td>Local device (SharedPreferences)</td></tr>
-    <tr><td>Onboarding state</td><td>Whether the first-run intro was completed</td><td>Local device (SharedPreferences)</td></tr>
-    <tr><td>Network request logs</td><td>Standard HTTP requests generated when fetching Wikipedia images / summaries</td><td>Wikipedia (external) — we do not retain</td></tr>
-  </table>
+        <h2>Article 1 (Purpose of Processing)</h2>
+        <p>We process the minimum information necessary for the following purposes:</p>
+        <ul>
+            <li>Preserving visit records, streak counts, and passport progress (locally on device)</li>
+            <li>Delivering the daily "Landscape of the Day" local notification (only when enabled)</li>
+            <li>Saving user preferences (notification time, sound on/off, dark mode, etc.)</li>
+            <li>Improving service quality and aggregating anonymous statistics</li>
+        </ul>
 
-  <h2>2. Purposes</h2>
-  <ul>
-    <li>Preserve visit records and stamp progress (locally on device)</li>
-    <li>Send the daily "Landscape of the Day" reminder (only when enabled by the user)</li>
-    <li>Improve service quality and statistical analysis</li>
-  </ul>
+        <h2>Article 2 (Information Collected and Methods)</h2>
+        <p>The Service does not require sign-up, so we <strong>do not collect personally identifiable information such as name, email, or phone number</strong>. The following data is processed automatically:</p>
+        <table>
+            <tr><th>Type</th><th>Details</th><th>Storage</th></tr>
+            <tr><td>Visit records</td><td>IDs of landmarks marked as visited, stamp dates, streak counts, optional memos</td><td>Local device (SharedPreferences)</td></tr>
+            <tr><td>Preferences</td><td>Daily reminder enabled/time, sound effects on/off, theme mode, onboarding completion</td><td>Local device (SharedPreferences)</td></tr>
+            <tr><td>Recent searches</td><td>Up to 8 recent search terms entered in the Search screen</td><td>Local device (SharedPreferences)</td></tr>
+            <tr><td>Network request logs</td><td>Standard HTTPS requests (IP, User-Agent) when fetching Wikipedia images / summaries</td><td>Wikimedia (external) — not stored on our servers</td></tr>
+        </table>
 
-  <h2>3. External Service (Wikipedia)</h2>
-  <p>The Service fetches landmark photos and summary text from the Wikimedia Foundation's public <a href="https://en.wikipedia.org/api/rest_v1/" target="_blank" rel="noopener">Wikipedia REST API</a>. During this process, standard HTTP request information such as your IP address and device metadata may be transmitted to Wikimedia servers. We do not collect or retain this information separately. Wikimedia's privacy policy is available at <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">foundation.wikimedia.org/wiki/Policy:Privacy_policy</a>.</p>
+        <h2>Article 3 (Retention Period)</h2>
+        <p>We do not retain personally identifiable information on our servers.</p>
+        <ul>
+            <li><strong>Locally stored data</strong>: Removed permanently when the app is uninstalled.</li>
+            <li><strong>"Reset visit records" feature</strong>: From Settings, you may instantly delete all stamps, memos, and streak counts at any time.</li>
+            <li><strong>External service logs</strong>: Not owned by us — governed by each external service's policy.</li>
+        </ul>
 
-  <h2>4. Notification Permission</h2>
-  <p>The Service may request notification permission to deliver the daily "Landscape of the Day" reminder. You may decline this permission or revoke it at any time in your system settings. Notifications are produced entirely as local notifications on your device. <strong>We do not send push notifications from our servers.</strong></p>
+        <h2>Article 4 (Disclosure to Third Parties)</h2>
+        <p>We do not share your information with third parties, except as required by law or by legitimate requests from investigative authorities.</p>
 
-  <h2>5. Advertising</h2>
-  <p>The Service currently displays no advertising. If advertising is introduced in the future, we will update this Privacy Policy and provide in-app notice.</p>
+        <h2>Article 5 (Processor Delegation)</h2>
+        <p>We currently do not delegate personal information processing to third-party processors. If advertising or analytics processors are introduced in the future, we will update this Policy with prior notice.</p>
 
-  <h2>6. In-App Purchases</h2>
-  <p>The Service currently offers no paid in-app purchases. If paid items are introduced in the future, we will update this Privacy Policy and the Terms of Service accordingly.</p>
+        <h2>Article 6 (External Service Integration)</h2>
+        <p>The Service calls or links to the following external services. We do not retain any information that these services may collect.</p>
+        <ul>
+            <li><strong>Wikimedia (Wikipedia REST API)</strong>: Used to fetch landmark photos and summary text. Standard HTTPS request information such as IP and device metadata may be transmitted to Wikimedia. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Wikimedia Privacy Policy</a></li>
+            <li><strong>External links (tap to navigate)</strong>: The Wikipedia / YouTube / Maps app (Google Maps, etc.) buttons on landmark detail screens open external browsers or apps. We do not track or store activity on those external sites.</li>
+            <li><strong>System share sheet</strong>: The "Invite others" feature invokes the OS share sheet. No user data other than the share text leaves the device.</li>
+        </ul>
 
-  <h2>7. Retention</h2>
-  <p>We do not retain personally identifiable information on our servers. Visit records, notification settings and other local data are removed when you uninstall the app.</p>
+        <h2>Article 7 (Permissions)</h2>
+        <p>Trovel uses only the minimum permissions necessary for service operation.</p>
+        <ul>
+            <li><strong>Notifications (POST_NOTIFICATIONS)</strong>: For daily "Landscape of the Day" local notifications. May be declined or revoked at any time in system settings. Notifications are produced entirely on-device. <strong>We do not send push notifications from our servers.</strong></li>
+            <li><strong>Exact alarm (SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM)</strong>: For precise delivery of the daily reminder at user-set times.</li>
+            <li><strong>Boot completed (RECEIVE_BOOT_COMPLETED, Android)</strong>: To preserve scheduled daily reminders across device restarts.</li>
+            <li><strong>Internet (INTERNET)</strong>: For fetching Wikipedia landmark photos and summaries.</li>
+        </ul>
 
-  <h2>8. Third-Party Sharing</h2>
-  <p>We do not share your information with third parties, except as required by law or by legitimate requests from investigative authorities.</p>
+        <h2>Article 8 (User Rights)</h2>
+        <p>You may exercise the following rights, which we process promptly:</p>
+        <ul>
+            <li>Revoke notification permission at any time in system settings.</li>
+            <li>Use <strong>"Reset visit records"</strong> in Settings to instantly delete all local data.</li>
+            <li>Uninstalling the app removes all locally stored data.</li>
+            <li>For additional rights, contact us using the information below.</li>
+        </ul>
 
-  <h2>9. User Rights</h2>
-  <p>You may revoke notification permission at any time in your system settings, and all visit records and local data are removed immediately when the app is uninstalled. For additional rights, contact us below.</p>
+        <h2>Article 9 (Security Measures)</h2>
+        <ul>
+            <li><strong>Technical measures</strong>: User data is stored exclusively in the app sandbox (SharedPreferences) on device, blocking external access.</li>
+            <li><strong>Minimization principle</strong>: We process only the minimum information necessary and do not collect identifiable personal information.</li>
+            <li><strong>Administrative measures</strong>: We have no internal system to access user data; all data stays on the user's device.</li>
+            <li><strong>External services</strong>: We use only verified official APIs (Wikimedia) and adhere to their privacy policies.</li>
+        </ul>
 
-  <h2>10. Children Under 14</h2>
-  <p>The Service is available to children under 14, but since we do not collect identifiable personal information, no separate guardian consent process is implemented.</p>
+        <h2>Article 10 (Advertising and In-App Purchases)</h2>
+        <p>The Service currently displays no advertising and offers no paid in-app purchases. If introduced in the future, we will update this Policy with in-app notice.</p>
 
-  <h2>11. Changes to This Policy</h2>
-  <p>We may revise this Policy in response to legal or service changes; revisions take effect upon posting on this page.</p>
+        <h2>Article 11 (Children Under 14)</h2>
+        <p>The Service is available to children under 14, but since we do not collect identifiable personal information, no separate guardian consent process is implemented.</p>
 
-  <h2>12. Contact</h2>
-  <p>Hasegi Inc.<br>
-  Email: <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a></p>
+        <h2>Article 12 (Privacy Officer)</h2>
+        <div class="contact-info">
+            <p><strong>Hasegi Inc.</strong></p>
+            <p>Email: <a href="mailto:hasegi.cs@gmail.com">hasegi.cs@gmail.com</a></p>
+        </div>
+
+        <h2>Article 13 (Changes to This Policy)</h2>
+        <p>We may revise this Policy in response to legal or service changes; revisions take effect upon posting on this page.</p>
+
+        <h2>Article 14 (Privacy Infringement Reporting)</h2>
+        <p>For reporting or consultation on privacy infringement, the following Korean agencies can be contacted:</p>
+        <ul>
+            <li><strong>Personal Information Infringement Report Center</strong> (privacy.go.kr / Tel: 182)</li>
+            <li><strong>Personal Information Dispute Mediation Committee</strong> (www.kopico.go.kr / Tel: 1833-6972)</li>
+            <li><strong>Supreme Prosecutors' Office Cybercrime Investigation</strong> (www.spo.go.kr / Tel: 1301)</li>
+            <li><strong>National Police Agency Cyber Bureau</strong> (cyberbureau.police.go.kr / Tel: 182)</li>
+        </ul>
+
+        <div class="highlight">
+            <p><strong>Trovel</strong> values your privacy and manages user information safely in compliance with applicable laws. If you have any questions, please contact us at any time.</p>
+        </div>
+    </div>
 </body>
 </html>
