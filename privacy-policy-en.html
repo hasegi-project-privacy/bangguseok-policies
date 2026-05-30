@@ -95,6 +95,7 @@
             <tr><td>Preferences</td><td>Daily reminder enabled/time, sound effects on/off, theme mode, onboarding completion</td><td>Local device (SharedPreferences)</td></tr>
             <tr><td>Recent searches</td><td>Up to 8 recent search terms entered in the Search screen</td><td>Local device (SharedPreferences)</td></tr>
             <tr><td>Network request logs</td><td>Standard HTTPS requests (IP, User-Agent) when fetching Wikipedia images / summaries</td><td>Wikimedia (external) — not stored on our servers</td></tr>
+            <tr><td>Advertising identifiers &amp; measurement data</td><td>Advertising ID (IDFA / AAID), coarse location (country-level), ad impression / click / viewability events, device type and OS version, and other standard advertising signals</td><td>Google AdMob (external) — not stored on our servers. Users may block or reset at any time via OS settings ("Disable personalized ads" on iOS / "Reset / Delete advertising ID" on Android)</td></tr>
         </table>
 
         <h2>Article 3 (Retention Period)</h2>
@@ -109,7 +110,12 @@
         <p>We do not share your information with third parties, except as required by law or by legitimate requests from investigative authorities.</p>
 
         <h2>Article 5 (Processor Delegation)</h2>
-        <p>We currently do not delegate personal information processing to third-party processors. If advertising or analytics processors are introduced in the future, we will update this Policy with prior notice.</p>
+        <p>We delegate a limited portion of data processing to the following processors for advertising delivery.</p>
+        <table>
+            <tr><th>Processor</th><th>Delegated work</th><th>Information delegated</th></tr>
+            <tr><td>Google LLC (Google AdMob)</td><td>In-app ad serving, impression measurement, ad fraud prevention</td><td>Advertising ID (IDFA / AAID), coarse location, device / OS metadata, ad event logs</td></tr>
+        </table>
+        <p>If a user declines App Tracking Transparency on iOS, or disables the advertising ID on Android, only non-personalized (contextual) ads are served and no identifiable advertising signal is transmitted.</p>
 
         <h2>Article 6 (External Service Integration)</h2>
         <p>The Service calls or links to the following external services. We do not retain any information that these services may collect.</p>
@@ -117,6 +123,7 @@
             <li><strong>Wikimedia (Wikipedia REST API)</strong>: Used to fetch landmark photos and summary text. Standard HTTPS request information such as IP and device metadata may be transmitted to Wikimedia. <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">Wikimedia Privacy Policy</a></li>
             <li><strong>External links (tap to navigate)</strong>: The Wikipedia / YouTube / Maps app (Google Maps, etc.) buttons on landmark detail screens open external browsers or apps. We do not track or store activity on those external sites.</li>
             <li><strong>System share sheet</strong>: The "Invite others" feature invokes the OS share sheet. No user data other than the share text leaves the device.</li>
+            <li><strong>Google AdMob</strong>: Serves the bottom-of-screen banner and full-screen ads on app open. Standard advertising signals (advertising ID, coarse location, device metadata) may be transmitted to Google. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> · <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">AdMob data disclosures</a></li>
         </ul>
 
         <h2>Article 7 (Permissions)</h2>
@@ -134,6 +141,7 @@
             <li>Revoke notification permission at any time in system settings.</li>
             <li>Use <strong>"Reset visit records"</strong> in Settings to instantly delete all local data.</li>
             <li>Uninstalling the app removes all locally stored data.</li>
+            <li><strong>Advertising identifier opt-out</strong>: On iOS, go to Settings → Privacy &amp; Security → Tracking; on Android, go to Settings → Google → Ads to refuse / reset the advertising ID or opt out of personalized ads.</li>
             <li>For additional rights, contact us using the information below.</li>
         </ul>
 
@@ -142,11 +150,31 @@
             <li><strong>Technical measures</strong>: User data is stored exclusively in the app sandbox (SharedPreferences) on device, blocking external access.</li>
             <li><strong>Minimization principle</strong>: We process only the minimum information necessary and do not collect identifiable personal information.</li>
             <li><strong>Administrative measures</strong>: We have no internal system to access user data; all data stays on the user's device.</li>
-            <li><strong>External services</strong>: We use only verified official APIs (Wikimedia) and adhere to their privacy policies.</li>
+            <li><strong>External services</strong>: We use only verified official SDKs and APIs such as the Wikimedia REST API and Google AdMob, and we adhere to each provider's privacy policy.</li>
         </ul>
 
         <h2>Article 10 (Advertising and In-App Purchases)</h2>
-        <p>The Service currently displays no advertising and offers no paid in-app purchases. If introduced in the future, we will update this Policy with in-app notice.</p>
+        <p>The Service displays <strong>Google AdMob</strong> advertising to fund continued operation. We do not currently offer paid in-app purchases; if introduced, this Policy will be updated with prior in-app notice.</p>
+        <h3>10.1 Ad formats shown</h3>
+        <ul>
+            <li><strong>Banner</strong>: Fixed at the bottom of the main screen.</li>
+            <li><strong>App Open</strong>: Shown once on cold start, and on resume only when the app has been in the background for 2 hours or more (not on brief task-switches).</li>
+            <li><strong>Interstitial</strong>: Shown when entering a region (country group) screen, with a minimum 5-minute interval and a maximum of 3 times per session. Not shown within 60 seconds of an App Open ad.</li>
+            <li><strong>Exit-dialog Native ad</strong>: Embedded inside the "Exit / Keep exploring" confirmation dialog shown when the user tries to leave the app. The user can dismiss the dialog by tapping "Keep exploring" without watching the ad.</li>
+        </ul>
+        <h3>10.2 How advertising data is processed</h3>
+        <ul>
+            <li>Google AdMob processes the advertising ID (IDFA / AAID), coarse location (country-level), and ad impression / click events. <strong>No advertising data is stored on our servers.</strong></li>
+            <li>You may decline ad tracking at any time in your device settings:
+                <ul>
+                    <li><strong>iOS</strong>: Settings → Privacy &amp; Security → Tracking → disable for "Trovel" (App Tracking Transparency).</li>
+                    <li><strong>Android</strong>: Settings → Google → Ads → "Delete advertising ID" or "Opt out of Ads Personalization".</li>
+                </ul>
+            </li>
+            <li>Even when tracking is declined, ads continue to display, but only contextual non-personalized ads are served instead of interest-based ones.</li>
+        </ul>
+        <h3>10.3 Children &amp; ad content</h3>
+        <p>Because the Service is suitable for family use, we apply AdMob's <strong>"Non-personalized ads"</strong> option together with the age-appropriate content rating filter, so that inappropriate ads are not displayed.</p>
 
         <h2>Article 11 (Children Under 14)</h2>
         <p>The Service is available to children under 14, but since we do not collect identifiable personal information, no separate guardian consent process is implemented.</p>
